@@ -1,0 +1,16 @@
+.goimgsvg {
+
+    $dim: 150px;
+
+    width: $dim;
+    height: $dim;
+    float: right;
+    padding: 0;
+    margin: 5px;
+
+    & > img {
+        max-width: $dim;
+        max-height: $dim;
+    }
+
+}
