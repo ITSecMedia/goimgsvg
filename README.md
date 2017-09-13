@@ -1,6 +1,6 @@
 # goimgsvg
 
-SVG as base64 inline images for use in Go-Lang templates
+SVG as base64 inline images (data-uri) for use in Go-Lang templates
 
 To be compatible with Microsoft Edge the SVG still have to be base64 encoded as currently only Chrome supports pure SVG as inline image.
 
