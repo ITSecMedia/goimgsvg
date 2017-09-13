@@ -101,11 +101,11 @@ func (cf *GoImgSVG) GetSVGByCurrency(currency string) string {
 
 }
 
-// GetSVGByFilename ...
-func (cf *GoImgSVG) GetSVGByFilename(iso3166 string) string {
+// GetSVGByFilename ... (country flags use ISO-3166 )
+func (cf *GoImgSVG) GetSVGByFilename(id string) string {
 
-	svg := cf.Base64SVG[iso3166]
-	return cf.printSVG(svg, iso3166)
+	svg := cf.Base64SVG[id]
+	return cf.printSVG(svg, id)
 
 }
 
