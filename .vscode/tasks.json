@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    // https://code.visualstudio.com/docs/editor/tasks
+    // https://github.com/Microsoft/vscode-go/issues/1166
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "options": {
+                // "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "taskName": "go-build-debug",
+            "type": "shell",
+            "command": "go build -i -gcflags=\"-N -l\" -o debug -x",
+            "problemMatcher": []
+        }
+    ]
+}
